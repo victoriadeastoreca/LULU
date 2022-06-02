@@ -1,0 +1,225 @@
+/* MEDIA QUERIES */
+@media (min-width:1023px) and (max-width: 1200px){
+    .new__div{
+        margin: 2rem 0rem;
+    }
+    .best__div{
+        margin-top: 2.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .card{
+        margin: 1rem 0.2rem;
+    }
+    .row{
+        margin-bottom: 0px;
+    }
+
+    .newsletter{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        &__icono{
+            margin: 0.5rem;
+        }
+    }
+}
+
+/* IPAD vertical */
+
+@media (min-width:768px) and (max-width: 1023px){
+
+    .new__div{
+        margin: 2rem 0rem;
+    }
+    .best__div{
+        margin-top: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+
+    .card{
+        margin: 0.7rem 0rem;
+        &-title{
+            font-size: 18px;
+        }
+    }
+    .btn-primary{
+        font-size: 16px;
+    }
+    .tamañoImagenes:hover{
+        transform: scale(1);
+    }
+    .row{
+        margin-bottom: 0px;
+    }
+
+    .productos__boton{
+        margin: 1rem 0rem;
+    }
+
+    .newsletter{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        &__icono{
+            margin: 0.25rem;
+        }
+    }
+
+    .contacto{
+        &Formas{
+            justify-content: start;
+        }
+        &__iframe{
+            width: 50%;
+            height: 80%;
+        }
+    }
+}
+
+
+/* TABLET pequeña */
+@media (min-width:541px) and (max-width: 767px){
+
+    
+    h1{
+        font-size: 40px;
+    }
+    .portada__titulo{
+        font-size: 20px;
+    }
+    .portada{
+        &__titulo{
+            margin: 0.5rem 0rem;
+        }
+        &__boton{
+            font-size: 13px;
+        }
+    }
+
+    .new{
+        &__div{
+            margin-top: 2.5rem;
+        }
+        &__titulo{
+            font-size: 20px;
+        }
+    }
+    .best{
+        &__div{
+            margin-top: 3rem;
+        }
+        &__titulo{
+            font-size: 20px;
+        }
+    }
+
+
+    .card{
+        margin: 0.7rem 5rem;
+        &-title{
+            font-size: 20px;
+        }
+    }
+    .btn-primary{
+        font-size: 14px;
+    }
+    .tamaño{
+        &Imagenes:hover{
+            transform: scale(1);
+        }
+        &Iconos{
+            width: 36px
+        }
+    }
+
+    article{
+        margin-bottom: 0.5rem;
+    }
+
+    .newsletter{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        &__icono{
+            margin: 0.5rem;
+        }
+    }
+
+    .contacto__iframe{
+        width: 50%;
+        height: 80%;
+    }
+}
+
+/* CELULAR */
+@media (min-width:320px) and (max-width: 540px){
+    
+    .portada{
+        &__titulo{
+            margin-bottom: 2rem;
+        }
+        &__img{
+            display: none;
+        }
+        &__boton{
+            display: none;
+        }
+    }
+    .best__titulo{
+        margin-top: 1.5rem;
+    }
+
+    .card{
+        margin: 1rem;
+        &-title{
+            font-size: 18px;
+        }
+    }
+    .btn-primary{
+        font-size: 15px;
+        padding: 0.5rem;
+    }
+    .tamaño{
+        &Imagenes:hover{
+            transform: scale(1);
+        }
+        &Iconos{
+            width: 34px
+        }
+    }
+    .row{
+        margin-bottom: 0px;
+    }
+
+    .newsletter{
+        font-size: smaller;
+        margin-top: 2rem;
+        &__p{
+            margin: 0 1rem;
+        }
+        &__button{
+            padding: 3px;
+        }
+        &__icono{
+            margin: 0.5rem;
+        }
+    }
+
+    .contacto{
+        &__gridContainer{
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "formasContacto"
+            "lugarContacto";
+            grid-gap: 5%;
+        }
+        &Formas{
+            justify-content: center;
+            align-items: center;
+            margin-left: 0%;
+        }
+        &__iframe{
+            width: 80%;
+            height: 100%;
+        }
+    }
+}

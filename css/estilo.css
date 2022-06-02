@@ -37,7 +37,7 @@ h2 {
   font-weight: bold;
   color: #312323; }
 
-h3 {
+h3, .información__títulos {
   margin: 4px;
   font-size: 16px;
   font-weight: bold;
@@ -74,7 +74,10 @@ article {
   align-items: center;
   padding: 5% 0%; }
   .card__best {
-    background-color: #96887b; }
+    background-color: #96887b;
+    border-radius: 5%;
+    align-items: center;
+    padding: 5% 0%; }
 
 /* INDEX */
 .portada__titulo {
@@ -106,6 +109,11 @@ article {
   justify-content: space-between;
   flex-wrap: wrap; }
 
+.flexColumnCenter, .contactoFormas, .contactoLugar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .contacto__gridContainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -128,12 +136,13 @@ article {
   height: 15rem;
   border-radius: 2rem; }
 
-.flexColumnCenter {
+/* NUESTRA HISTORIA */
+.flexColCenterCenter, .historiaNosotras, .historiaMision, .historiaVision {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  align-items: center;
+  text-align: center; }
 
-/* NUESTRA HISTORIA */
 .historia__gridContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -148,12 +157,6 @@ article {
 
 .historiaVision {
   grid-area: historiaVision; }
-
-.flexColCenterCenter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; }
 
 main section div img {
   width: 25rem;
