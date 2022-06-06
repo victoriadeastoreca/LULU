@@ -97,6 +97,9 @@ $productos:(
     &__best{
         @include mixCard($color-cardBest);
     }
+    &-title{
+        font-size: larger;
+    }
 }
 
 /* INDEX */

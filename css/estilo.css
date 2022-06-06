@@ -78,6 +78,8 @@ article {
     border-radius: 5%;
     align-items: center;
     padding: 5% 0%; }
+  .card-title {
+    font-size: larger; }
 
 /* INDEX */
 .portada__titulo {
