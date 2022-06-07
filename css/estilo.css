@@ -249,8 +249,12 @@ main section div img {
     margin-bottom: 1rem; }
     .newsletter__icono {
       margin: 0.5rem; }
+  .contactoFormas {
+    justify-content: start;
+    margin-left: 10%;
+    flex-wrap: wrap; }
   .contacto__iframe {
-    width: 50%;
+    width: 60%;
     height: 80%; } }
 
 /* CELULAR */
@@ -290,9 +294,12 @@ main section div img {
     grid-template-areas: "formasContacto" "lugarContacto";
     grid-gap: 5%; }
   .contactoFormas {
-    justify-content: center;
+    grid-area: formasContacto;
+    justify-content: start;
     align-items: center;
     margin-left: 0%; }
+  .contactoLugar {
+    grid-area: lugarContacto; }
   .contacto__iframe {
     width: 80%;
     height: 100%; } }

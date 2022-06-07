@@ -144,9 +144,16 @@
         }
     }
 
-    .contacto__iframe{
-        width: 50%;
-        height: 80%;
+    .contacto{
+        &Formas{
+            justify-content: start;
+            margin-left: 10%;
+            flex-wrap: wrap;
+        }
+        &__iframe{
+            width: 60%;
+            height: 80%;
+        }
     }
 }
 
@@ -213,9 +220,13 @@
             grid-gap: 5%;
         }
         &Formas{
-            justify-content: center;
+            grid-area: formasContacto;
+            justify-content: start;
             align-items: center;
             margin-left: 0%;
+        }
+        &Lugar{
+            grid-area: lugarContacto;
         }
         &__iframe{
             width: 80%;
