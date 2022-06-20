@@ -1,5 +1,5 @@
 /* MEDIA QUERIES */
-@media (min-width:1023px) and (max-width: 1200px){
+@media (min-width:990px) and (max-width: 1200px){
     .new__div{
         margin: 2rem 0rem;
     }
@@ -15,7 +15,7 @@
         margin-bottom: 0;
     }
     .tamaño__imagenes{
-        width: 35vw;
+        width: 28vw;
         &NewBest{
             width: 25vw;
             &:hover{
@@ -48,7 +48,7 @@
 
 /* IPAD vertical */
 
-@media (min-width:768px) and (max-width: 1023px){
+@media (min-width:768px) and (max-width: 990px){
 
     .new__div{
         margin: 2rem 0rem;

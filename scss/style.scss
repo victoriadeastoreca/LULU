@@ -56,6 +56,7 @@ a{
 }
 article{
     margin: 2rem 0;
+    margin-bottom: 1rem;
 }
 
 
@@ -92,10 +93,8 @@ article{
     padding: 1rem 0;
 }
 .card{
+    margin: 1rem 0;
     @include mix__card($color-headerCard);
-    &__best{
-        @include mix__card($color-cardBest);
-    }
     &-title{
         font-size: larger;
     }
@@ -118,6 +117,9 @@ article{
         margin-top: 5rem;
         margin-bottom: 1rem;
     }
+    &__card{
+        margin: 0;
+    }
     &__titulo{
         font-size: 19px;
     }
@@ -126,6 +128,10 @@ article{
     &__div{
         margin-top: 5rem;
         margin-bottom: 1rem;
+    }
+    &__card{
+        margin: 0;
+        @include mix__card($color-cardBest);
     }
     &__titulo{
         font-size: 19px;
