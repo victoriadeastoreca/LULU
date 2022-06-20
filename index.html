@@ -55,7 +55,7 @@
                     </ul>
                 </div>
                 <a class="navbar-brand" href="#">
-                    <img class="tamañoIconos" src="recursos/redes/carrito-de-compras.png" alt="Carrito"> 
+                    <img class="tamaño__iconos" src="recursos/redes/carrito-de-compras.png" alt="Carrito"> 
                 </a>
             </div>
         </nav>
@@ -73,7 +73,27 @@
                 </div>
     
                 <div class="col-xl-12">
-                    <img class="portada__img img-fluid" src="recursos/im-portada.jpg" alt="Foto portada">
+                    <div id="carouselExampleControls" class="carousel slide portada__carrusel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="recursos/im-coming-soon.jpg" class="portada__img" alt="Imágen Coming soon">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/im-portada.jpg" class="portada__img" alt="Imágen portada">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/im-cartera.jpg" class="portada__img" alt="Imágen cartera new in">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
     
                 <div class="col-xl-12">
@@ -89,7 +109,7 @@
             <article class="row">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="card" >
-                        <img class="tamañoImagenes" src="recursos/im-choker-jupiter.jpg" class="card-img-top" alt="Choker JUPITER">
+                        <img class="tamaño__imagenesNewBest" src="recursos/im-choker-jupiter.jpg" class="card-img-top" alt="Choker JUPITER">
                         <div class="card-body">
                             <p class="card-text">Choker JUPITER</p>
                         </div>
@@ -98,7 +118,7 @@
     
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="card" >
-                        <img class="tamañoImagenes" src="recursos/im-collar-perlas.jpg" class="card-img-top" alt="Collar de perlas">
+                        <img class="tamaño__imagenesNewBest" src="recursos/im-collar-perlas.jpg" class="card-img-top" alt="Collar de perlas">
                         <div class="card-body">
                             <p class="card-text">Collar de perlas</p>
                         </div>
@@ -107,7 +127,7 @@
     
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="card" >
-                        <img class="tamañoImagenes" src="recursos/im-collar-daila.jpg" class="card-img-top" alt="Collar DAILA">
+                        <img class="tamaño__imagenesNewBest" src="recursos/im-collar-daila.jpg" class="card-img-top" alt="Collar DAILA">
                         <div class="card-body">
                             <p class="card-text">Collar DAILA</p>
                         </div>
@@ -125,7 +145,7 @@
             <article class="row">
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="card card__best ">
-                        <img class="tamañoImagenes" src="recursos/im-collares-hanna.jpg" alt="Imágen collares HANA" />
+                        <img class="tamaño__imagenesNewBest" src="recursos/im-collares-hanna.jpg" alt="Imágen collares HANA" />
                         <div class="card-body">
                             <p class="card-title">Collares HANA</p>
                             <p class="card-text">Precio $</p>
@@ -136,7 +156,7 @@
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="card card__best">
-                        <img class="tamañoImagenes" src="recursos/im-choker-daisy.jpg" alt="Imágen Choker Daisy" />
+                        <img class="tamaño__imagenesNewBest" src="recursos/im-choker-daisy.jpg" alt="Imágen Choker Daisy" />
                         <div class="card-body">
                             <p class="card-title">Choker Daisy</p>
                             <p class="card-text">Precio $</p>
@@ -147,7 +167,7 @@
 
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                     <div class="card card__best">
-                        <img class="tamañoImagenes" src="recursos/im-collar-sailor.jpg" alt="Imágen Collar Sailor" />
+                        <img class="tamaño__imagenesNewBest" src="recursos/im-collar-sailor.jpg" alt="Imágen Collar Sailor" />
                         <div class="card-body">
                             <p class="card-title">Collar Sailor</p>
                             <p class="card-text">Precio $</p>
@@ -157,6 +177,12 @@
                 </div>
 
             </article>
+
+            <div class="row text-center">
+                <div class="col">
+                    <a class="navbar-brand" href="páginas/productos.html"><button class="index__boton boton">Ver todos los productos</button></a>
+                </div>
+            </div>
 
         </section>
     </main>
@@ -170,7 +196,7 @@
             <input class="newsletter__button" type="submit" value="Subscribirme"/>           
         </form>
 
-        <a href= "https://www.instagram.com/lulus.ba/"><img class="tamañoIconos newsletter__icono" src="recursos/redes/instagram-logotipo.png" alt="Logo Instagram"></a>
+        <a href= "https://www.instagram.com/lulus.ba/"><img class="tamaño__iconos newsletter__icono" src="recursos/redes/instagram-logotipo.png" alt="Logo Instagram"></a>
         <div>Todos los derechos reservados</div>
     </footer>
 

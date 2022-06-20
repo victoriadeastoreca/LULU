@@ -12,7 +12,16 @@
         margin: 1rem 0.2rem;
     }
     .row{
-        margin-bottom: 0px;
+        margin-bottom: 0;
+    }
+    .tamaño__imagenes{
+        width: 35vw;
+        &NewBest{
+            width: 25vw;
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
     }
 
     .newsletter{
@@ -21,6 +30,19 @@
         &__icono{
             margin: 0.5rem;
         }
+    }
+
+    .historia{
+        &__gridContainer{
+            grid-gap: 1rem;
+        }
+        &__img{
+            justify-content: center;
+        }
+    }
+    main section div img{
+        width: 33vw;
+        border-radius: 1rem;
     }
 }
 
@@ -46,8 +68,14 @@
     .btn-primary{
         font-size: 16px;
     }
-    .tamañoImagenes:hover{
-        transform: scale(1);
+    .tamaño__imagenes{
+        width: 35vw;
+        &NewBest{
+            width: 27vw;
+            &:hover{
+                transform: scale(1);
+            }
+        }
     }
     .row{
         margin-bottom: 0px;
@@ -66,39 +94,67 @@
     }
 
     .contacto{
-        &Formas{
-            justify-content: start;
+        &__formas{
+            justify-content: center;
+            margin-left: 2rem;
+            flex-wrap: wrap;
         }
         &__iframe{
-            width: 50%;
-            height: 80%;
+            width: 35vw;
+            height: 30vh;
         }
+    }
+
+    .historia{
+        &__gridContainer{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "historiaPresentacion historiaImg"
+            "historiaNosotras historiaImg"
+            "historiaMision historiaVision";
+            grid-gap: 1rem;
+        }
+        &__presentacion{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+        }
+        &__presentacion, &__nosotras, &__mision, &__vision{
+            text-align: center;
+        }
+        &__img{
+            justify-content: center;
+        }
+    }
+    main section div img{
+        width: 42vw;
+        border-radius: 1rem;
     }
 }
 
 
 /* TABLET pequeña */
-@media (min-width:541px) and (max-width: 767px){
+@media (min-width:541px) and (max-width: 768px){
 
-    
     h1{
-        font-size: 40px;
-    }
-    .portada__titulo{
-        font-size: 20px;
+        font-size: 43px;
     }
     .portada{
         &__titulo{
+            font-size: 23px;
             margin: 0.5rem 0rem;
         }
+        &__carrusel{
+            display: none;
+        }
         &__boton{
-            font-size: 13px;
+            display: none;
         }
     }
 
     .new{
         &__div{
-            margin-top: 2.5rem;
+            margin-top: 1.5rem;
         }
         &__titulo{
             font-size: 20px;
@@ -115,20 +171,30 @@
 
 
     .card{
-        margin: 0.7rem 5rem;
+        margin: 0rem 3rem;
+        margin-bottom: 1rem;
         &-title{
-            font-size: 20px;
+            font-size: 21px;
+        }
+        &-text{
+            font-size: 19px;
         }
     }
     .btn-primary{
         font-size: 14px;
     }
     .tamaño{
-        &Imagenes:hover{
-            transform: scale(1);
+        &__imagenes{
+            width: 55vw;
+            &NewBest{
+                width: 55vw;
+                &:hover{
+                    transform: scale(1);
+                }
+            }
         }
-        &Iconos{
-            width: 36px
+        &__iconos{
+            width: 6vw;
         }
     }
 
@@ -145,15 +211,41 @@
     }
 
     .contacto{
-        &Formas{
-            justify-content: start;
-            margin-left: 10%;
+        &__formas{
+            justify-content: center;
+            text-align: start;
+            margin-left: 2rem;
             flex-wrap: wrap;
         }
         &__iframe{
-            width: 60%;
-            height: 80%;
+            width: 50vw;
+            height: 40vh;
         }
+    }
+    .historia{
+        &__gridContainer{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+            "historiaPresentacion historiaImg"
+            "historiaNosotras historiaNosotras"
+            "historiaMision historiaVision";
+            grid-gap: 1rem;
+        }
+        &__presentacion{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+        }
+        &__presentacion, &__nosotras, &__mision, &__vision{
+            text-align: center;
+        }
+        &__img{
+            justify-content: start;
+        }
+    }
+    main section div img{
+        width: 42vw;
+        border-radius: 1rem;
     }
 }
 
@@ -163,22 +255,33 @@
     .portada{
         &__titulo{
             margin-bottom: 2rem;
+            font-size: 22px;
         }
-        &__img{
+        &__carrusel{
             display: none;
         }
         &__boton{
             display: none;
         }
     }
-    .best__titulo{
-        margin-top: 1.5rem;
+
+    .new__div{
+        margin-top: 0rem;
+    }
+    .best{
+        &__div{
+            margin-top: 3rem;
+        }
+        &__titulo{
+            margin-top: 0.5rem;
+        }
     }
 
     .card{
-        margin: 1rem;
+        margin: 0rem 1rem;
+        margin-bottom: 1rem;
         &-title{
-            font-size: 18px;
+            font-size: 22px;
         }
     }
     .btn-primary{
@@ -186,11 +289,17 @@
         padding: 0.5rem;
     }
     .tamaño{
-        &Imagenes:hover{
-            transform: scale(1);
+        &__imagenes{
+            width: 70vw;
+            &NewBest{
+                width: 65vw;
+                &:hover{
+                    transform: scale(1);
+                }
+            }
         }
-        &Iconos{
-            width: 34px
+        &__iconos{
+            width: 8vw
         }
     }
     .row{
@@ -204,7 +313,7 @@
             margin: 0 1rem;
         }
         &__button{
-            padding: 3px;
+            padding: 0.1rem;
         }
         &__icono{
             margin: 0.5rem;
@@ -217,20 +326,50 @@
             grid-template-areas: 
             "formasContacto"
             "lugarContacto";
-            grid-gap: 5%;
+            grid-gap: 1rem;
         }
-        &Formas{
+        &__formas{
             grid-area: formasContacto;
             justify-content: start;
             align-items: center;
-            margin-left: 0%;
+            margin-left: 0;
         }
-        &Lugar{
+        &__lugar{
             grid-area: lugarContacto;
         }
         &__iframe{
-            width: 80%;
-            height: 100%;
+            width: 80vw;
+            height: 35vh;
         }
     }
+    .historia{
+        &__gridContainer{
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "historiaPresentacion"
+            "historiaImg"
+            "historiaNosotras"
+            "historiaMision"
+            "historiaVision";
+            grid-gap: 1rem;
+        }
+        &__presentacion{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+        }
+        &__presentacion, &__nosotras, &__mision, &__vision{
+            text-align: center;
+        }
+    }
+    main section div img{
+        width: 45vw;
+        border-radius: 1rem;
+    }
+
+    .información__container{
+        margin:0 1rem;
+        font-weight: lighter; 
+    }
+
 }
