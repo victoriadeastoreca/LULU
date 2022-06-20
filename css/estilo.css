@@ -208,7 +208,7 @@ main section div img {
   text-decoration: underline; }
 
 /* MEDIA QUERIES */
-@media (min-width: 990px) and (max-width: 1200px) {
+@media (min-width: 990px) and (max-width: 1199px) {
   .new__div {
     margin: 2rem 0rem; }
   .best__div {
