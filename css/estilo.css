@@ -289,7 +289,7 @@ main section div img {
     border-radius: 1rem; } }
 
 /* TABLET pequeña */
-@media (min-width: 541px) and (max-width: 767px) {
+@media (min-width: 541px) and (max-width: 767.5px) {
   h1 {
     font-size: 43px; }
   .portada__titulo {
